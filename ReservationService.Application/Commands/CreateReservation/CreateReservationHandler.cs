@@ -28,6 +28,8 @@ namespace ReservationService.Application.Commands.CreateReservation
                 CustomerId = request.CustomerId,
                 StartDate = request.StartDate,
                 EndDate = request.EndDate,
+                NumberOfGuests = request.NumberOfGuests,
+                Price = request.Price,
                 RoomNumber = request.RoomNumber,
                 Status = ReservationStatus.Pending,
                 CreatedAt = DateTime.UtcNow

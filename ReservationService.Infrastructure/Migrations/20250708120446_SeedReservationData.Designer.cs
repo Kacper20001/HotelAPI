@@ -12,8 +12,8 @@ using ReservationService.Infrastructure.Data;
 namespace ReservationService.Infrastructure.Migrations
 {
     [DbContext(typeof(ReservationDbContext))]
-    [Migration("20250707203221_InitialCreate_Reservation")]
-    partial class InitialCreate_Reservation
+    [Migration("20250708120446_SeedReservationData")]
+    partial class SeedReservationData
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -43,6 +43,12 @@ namespace ReservationService.Infrastructure.Migrations
 
                     b.Property<DateTime?>("ModifiedAt")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("NumberOfGuests")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<int>("RoomNumber")
                         .HasMaxLength(20)

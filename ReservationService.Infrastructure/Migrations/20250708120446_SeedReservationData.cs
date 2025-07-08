@@ -13,7 +13,8 @@ namespace ReservationService.Infrastructure.Migrations
                 table: "Reservations",
                 columns: new[]
                 {
-                    "Id", "CustomerId", "StartDate", "EndDate", "RoomNumber", "Status", "CreatedAt", "ModifiedAt"
+                    "Id", "CustomerId", "StartDate", "EndDate", "RoomNumber", "Status",
+                    "CreatedAt", "ModifiedAt", "NumberOfGuests", "Price"
                 },
                 values: new object[]
                 {
@@ -24,7 +25,9 @@ namespace ReservationService.Infrastructure.Migrations
                     101,
                     "Pending",
                     new DateTime(2025, 7, 7, 21, 0, 0),
-                    null
+                    null,
+                    2,
+                    1500.00m
                 });
 
             migrationBuilder.InsertData(
@@ -32,7 +35,8 @@ namespace ReservationService.Infrastructure.Migrations
                 table: "Reservations",
                 columns: new[]
                 {
-                    "Id", "CustomerId", "StartDate", "EndDate", "RoomNumber", "Status", "CreatedAt", "ModifiedAt"
+                    "Id", "CustomerId", "StartDate", "EndDate", "RoomNumber", "Status",
+                    "CreatedAt", "ModifiedAt", "NumberOfGuests", "Price"
                 },
                 values: new object[]
                 {
@@ -43,7 +47,9 @@ namespace ReservationService.Infrastructure.Migrations
                     203,
                     "Confirmed",
                     new DateTime(2025, 7, 7, 21, 0, 0),
-                    null
+                    null,
+                    1,
+                    2100.00m
                 });
 
             migrationBuilder.InsertData(
@@ -51,7 +57,8 @@ namespace ReservationService.Infrastructure.Migrations
                 table: "Reservations",
                 columns: new[]
                 {
-                    "Id", "CustomerId", "StartDate", "EndDate", "RoomNumber", "Status", "CreatedAt", "ModifiedAt"
+                    "Id", "CustomerId", "StartDate", "EndDate", "RoomNumber", "Status",
+                    "CreatedAt", "ModifiedAt", "NumberOfGuests", "Price"
                 },
                 values: new object[]
                 {
@@ -62,7 +69,9 @@ namespace ReservationService.Infrastructure.Migrations
                     305,
                     "Cancelled",
                     new DateTime(2025, 7, 7, 21, 0, 0),
-                    null
+                    null,
+                    3,
+                    850.00m
                 });
         }
 

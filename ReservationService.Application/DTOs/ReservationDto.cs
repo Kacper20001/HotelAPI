@@ -8,6 +8,8 @@ namespace ReservationService.Application.DTOs
         public Guid CustomerId { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
+        public int NumberOfGuests { get; set; }
+        public decimal Price { get; set; }
         public string RoomNumber { get; set; } = null!;
         public ReservationStatus Status { get; set; }
         public DateTime CreatedAt { get; set; }

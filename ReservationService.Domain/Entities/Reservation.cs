@@ -15,6 +15,14 @@ namespace ReservationService.Domain.Entities
 
         [Required]
         public DateTime EndDate { get; set; }
+        
+        [Required]
+        public int NumberOfGuests { get; set; }
+
+        [Required]
+        [Column(TypeName = "decimal(18,2)")]
+        public decimal Price { get; set; }
+
 
         [Required]
         public ReservationStatus Status { get; set; }
