@@ -1,7 +1,6 @@
 ﻿using AutoMapper;
 using CustomerService.Application.DTOs;
 using CustomerService.Application.Interfaces;
-using CustomerService.Domain.Entities;
 using MediatR;
 
 namespace CustomerService.Application.Queries.GetAllCustomers

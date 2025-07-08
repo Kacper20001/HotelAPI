@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http.Json;
-using System.Text;
-using System.Threading.Tasks;
-using ReservationService.Application.Interfaces;
+﻿using ReservationService.Application.Interfaces;
 using Shared.DTOs;
+using System.Net.Http.Json;
 
 
 namespace ReservationService.Infrastructure.HttpClients

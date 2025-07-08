@@ -1,10 +1,10 @@
-﻿using CustomerService.Application.Commands.CreateCustomer;
+﻿using CustomerService.API.Middleware;
+using CustomerService.Application.Commands.CreateCustomer;
 using CustomerService.Application.Interfaces;
 using CustomerService.Application.Mappings;
 using CustomerService.Application.Queries.GetAllCustomers;
 using CustomerService.Infrastructure.Data;
 using CustomerService.Infrastructure.Repositories;
-using CustomerService.API.Middleware;
 using FluentValidation;
 using FluentValidation.AspNetCore;
 using Microsoft.EntityFrameworkCore;

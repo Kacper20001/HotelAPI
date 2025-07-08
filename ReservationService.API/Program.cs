@@ -8,10 +8,9 @@ using ReservationService.Application.Commands.CreateReservation;
 using ReservationService.Application.Commands.DeleteReservation;
 using ReservationService.Application.Interfaces;
 using ReservationService.Application.Mappings;
-using ReservationService.Application.Queries.GetAllReservations;
 using ReservationService.Infrastructure.Data;
+using ReservationService.Infrastructure.HttpClients;
 using ReservationService.Infrastructure.Repositories;
-using ReservationService.Infrastructure.HttpClients; 
 
 var builder = WebApplication.CreateBuilder(args);
 

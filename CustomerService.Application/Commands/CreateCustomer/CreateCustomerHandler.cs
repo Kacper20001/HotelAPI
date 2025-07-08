@@ -1,12 +1,7 @@
 ﻿using AutoMapper;
+using CustomerService.Application.Interfaces;
 using CustomerService.Domain.Entities;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CustomerService.Application.Interfaces;
 
 namespace CustomerService.Application.Commands.CreateCustomer
 {
