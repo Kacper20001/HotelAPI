@@ -14,7 +14,7 @@ namespace ReservationService.Infrastructure.HttpClients
             _httpClient = httpClient;
         }
 
-        public async Task<CustomerDto?> GetCustomerByIdAsync(Guid customerId)
+        public async Task<CustomerDto?> GetByIdAsync(Guid customerId)
         {
             try
             {

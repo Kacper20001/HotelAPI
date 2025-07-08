@@ -19,6 +19,7 @@ namespace ReservationService.Infrastructure.Configuration
             builder.Property(r => r.Price).IsRequired().HasColumnType("decimal(18,2)");
             builder.Property(r => r.CreatedAt).IsRequired();
             builder.Property(r => r.ModifiedAt);
+            builder.Property(r => r.DiscountId).IsRequired(false);
         }
     }
 }

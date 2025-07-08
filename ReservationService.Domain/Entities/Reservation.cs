@@ -29,5 +29,8 @@ namespace ReservationService.Domain.Entities
 
         [Required]
         public int RoomNumber { get; set; }
+
+        [ForeignKey("DiscountId")]
+        public Guid? DiscountId { get; set; }
     }
 }

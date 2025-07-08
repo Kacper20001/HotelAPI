@@ -14,7 +14,7 @@ namespace ReservationService.Infrastructure.Migrations
                 columns: new[]
                 {
                     "Id", "CustomerId", "StartDate", "EndDate", "RoomNumber", "Status",
-                    "CreatedAt", "ModifiedAt", "NumberOfGuests", "Price"
+                    "CreatedAt", "ModifiedAt", "NumberOfGuests", "Price", "DiscountId"
                 },
                 values: new object[]
                 {
@@ -27,7 +27,8 @@ namespace ReservationService.Infrastructure.Migrations
                     new DateTime(2025, 7, 7, 21, 0, 0),
                     null,
                     2,
-                    1500.00m
+                    1500.00m,
+                    new Guid("a7382d56-48e1-449b-b59e-087867243daa") // FAMILY15
                 });
 
             migrationBuilder.InsertData(
@@ -36,7 +37,7 @@ namespace ReservationService.Infrastructure.Migrations
                 columns: new[]
                 {
                     "Id", "CustomerId", "StartDate", "EndDate", "RoomNumber", "Status",
-                    "CreatedAt", "ModifiedAt", "NumberOfGuests", "Price"
+                    "CreatedAt", "ModifiedAt", "NumberOfGuests", "Price", "DiscountId"
                 },
                 values: new object[]
                 {
@@ -49,7 +50,8 @@ namespace ReservationService.Infrastructure.Migrations
                     new DateTime(2025, 7, 7, 21, 0, 0),
                     null,
                     1,
-                    2100.00m
+                    2100.00m,
+                    new Guid("a7958029-27af-435f-95fb-8be1b6ac175c") // VIP20
                 });
 
             migrationBuilder.InsertData(
@@ -58,7 +60,7 @@ namespace ReservationService.Infrastructure.Migrations
                 columns: new[]
                 {
                     "Id", "CustomerId", "StartDate", "EndDate", "RoomNumber", "Status",
-                    "CreatedAt", "ModifiedAt", "NumberOfGuests", "Price"
+                    "CreatedAt", "ModifiedAt", "NumberOfGuests", "Price", "DiscountId"
                 },
                 values: new object[]
                 {
@@ -71,7 +73,8 @@ namespace ReservationService.Infrastructure.Migrations
                     new DateTime(2025, 7, 7, 21, 0, 0),
                     null,
                     3,
-                    850.00m
+                    850.00m,
+                    new Guid("32ee00b4-fd42-424d-aff2-a8f9bd50811e") // SUMMER10
                 });
         }
 

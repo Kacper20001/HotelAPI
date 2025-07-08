@@ -11,5 +11,7 @@ namespace ReservationService.Application.Commands.CreateReservation
         public int NumberOfGuests { get; set; }
         public decimal Price { get; set; }
         public int RoomNumber { get; set; }
+        public Guid? DiscountId { get; set; }
+
     }
 }

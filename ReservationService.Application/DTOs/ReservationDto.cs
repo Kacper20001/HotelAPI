@@ -12,6 +12,7 @@ namespace ReservationService.Application.DTOs
         public decimal Price { get; set; }
         public string RoomNumber { get; set; } = null!;
         public ReservationStatus Status { get; set; }
+        public Guid? DiscountId { get; set; }
         public DateTime CreatedAt { get; set; }
         public DateTime? ModifiedAt { get; set; }
     }

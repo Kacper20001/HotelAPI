@@ -40,9 +40,12 @@ builder.Services.AddScoped<IReservationRepository, ReservationRepository>();
 // Rejestracja HttpClienta do CustomerService
 builder.Services.AddHttpClient<ICustomerApiClient, CustomerApiClient>(client =>
 {
-    client.BaseAddress = new Uri("http://localhost:5216"); // <-- adres CustomerService
+    client.BaseAddress = new Uri("http://localhost:5216");
 });
-
+builder.Services.AddHttpClient<IDiscountApiClient, DiscountApiClient>(client =>
+{
+    client.BaseAddress = new Uri("http://localhost:5249/"); 
+});
 
 // MVC i Swagger
 builder.Services.AddControllers();

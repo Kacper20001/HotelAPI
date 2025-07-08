@@ -4,6 +4,6 @@ namespace ReservationService.Application.Interfaces
 {
     public interface ICustomerApiClient
     {
-        Task<CustomerDto?> GetCustomerByIdAsync(Guid customerId);
+        Task<CustomerDto?> GetByIdAsync(Guid id);
     }
 }

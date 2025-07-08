@@ -12,8 +12,8 @@ using ReservationService.Infrastructure.Data;
 namespace ReservationService.Infrastructure.Migrations
 {
     [DbContext(typeof(ReservationDbContext))]
-    [Migration("20250708120221_InitialCreate_Reservation_Corrected")]
-    partial class InitialCreate_Reservation_Corrected
+    [Migration("20250708173452_InitialCreate_Reservation")]
+    partial class InitialCreate_Reservation
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,6 +36,9 @@ namespace ReservationService.Infrastructure.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<Guid>("CustomerId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<Guid?>("DiscountId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("EndDate")
